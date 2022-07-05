@@ -38,10 +38,10 @@ resource "aws_instance" "default" {
       delete_on_termination = "true"
                   }
 }
-  tags = {
-  Owner = "ownerName"
-  Name = var.instance_name
-  }
+#   tags = {
+#   Owner = "ownerName"
+#   Name = var.instance_name
+#   }
 
 resource "aws_security_group" "default" {
   name        = var.sgname
