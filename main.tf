@@ -37,6 +37,7 @@ resource "aws_instance" "default" {
       volume_type = var.volume_type
       delete_on_termination = "true"
                   }
+}
   tags = {
   Owner = "ownerName"
   Name = var.instance_name
